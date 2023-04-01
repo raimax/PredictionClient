@@ -102,7 +102,8 @@ export class AppComponent {
   }
 
   onEnterKeyPressed(event: any) {
-		event.preventDefault();
+    event.preventDefault();
+    if (this.getMessage() === '') return;
     this.getPredictions();
   }
 }
