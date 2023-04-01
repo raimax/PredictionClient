@@ -1,0 +1,64 @@
+.main-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  form {
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+
+    textarea {
+      height: 150px;
+    }
+
+		button:nth-child(3) {
+			margin-top: 10px;
+		}
+  }
+
+  .naive-side {
+    position: absolute;
+    position: absolute;
+    top: 0;
+    padding: 100px;
+    width: 50%;
+    left: 0;
+    height: 100%;
+  }
+
+  .logistic-side {
+    position: absolute;
+    padding: 100px;
+    width: 50%;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  .naive-text {
+    top: 25px;
+    left: 25px;
+  }
+
+  .logistic-text {
+    bottom: 25px;
+    right: 25px;
+  }
+
+  .algorithm-text {
+    position: absolute;
+    font-size: 3em;
+    font-weight: 500;
+		color: black;
+  }
+}
+
+.examples-menu {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
